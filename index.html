@@ -1,15 +1,77 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Variaveis</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <title>Codificador de Textos</title>
   </head>
-  <body>
-    <input type="text" id="userInput" />
-    <button onclick="posNeg()">Validar número</button>
-    <p id="valorInserido"></p>
-    <script src="script.js"></script>
+  <body class="bg-light">
+    <div id="meuModal" class="modal">
+      <!-- Conteúdo do Modal -->
+      <div class="modal-content">
+        <span class="close">Fechar</span>
+        <p>Por favor digite apenas caracteres minúsculos</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 id="title" class="text-center my-4">Codificador de Textos</h1>
+      <section id="texts" class="row mb-4">
+        <div class="col-md-6">
+          <textarea
+            class="form-control"
+            name="t1"
+            id="t1"
+            cols="35"
+            rows="10"
+            placeholder="Escreva aqui seu texto para ser criptografado"
+          ></textarea>
+        </div>
+        <div class="col-md-6">
+          <textarea
+            class="form-control"
+            name="t2"
+            id="t2"
+            cols="35"
+            rows="10"
+            placeholder="Resultado"
+          ></textarea>
+        </div>
+      </section>
+      <section id="buttons" class="text-center">
+        <button
+          id="crypt"
+          type="button"
+          class="btn btn-outline-primary mx-2 mb-2"
+        >
+          Encryptar
+        </button>
+        <button
+          id="uncrypt"
+          type="button"
+          class="btn btn btn-outline-primary mx-2 mb-2"
+        >
+          Desencryptar
+        </button>
+        <button id="clear" type="button" class="btn btn-warning mx-2 mb-2">
+          Limpar
+        </button>
+        <button id="copy" type="button" class="btn btn-success mx-2 mb-2">
+          Copiar
+        </button>
+        <button id="paste" type="button" class="btn btn-info mx-2 mb-2">
+          Colar
+        </button>
+      </section>
+    </div>
+    <script src="encrypt.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
