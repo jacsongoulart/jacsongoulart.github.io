@@ -20,7 +20,7 @@
     </div>
 
     <div class="container">
-      <h1 id="title" class="text-center my-4">Codificador de Textos</h1>
+      <h1 id="title" class="text-center my-3">CODIFICADOR DE TEXTOS</h1>
       <section id="texts" class="row mb-4">
         <div class="col-md-6">
           <textarea
@@ -29,7 +29,7 @@
             id="t1"
             cols="35"
             rows="8"
-            placeholder="Escreva aqui seu texto para ser criptografado"
+            placeholder="Escreva ou cole aqui o texto a ser criptografado/decifrado."
           ></textarea>
         </div>
         <div class="col-md-6">
@@ -44,27 +44,23 @@
         </div>
       </section>
       <section id="buttons" class="text-center">
+        <button id="crypt" type="button" class="btn btn-primary mx-2 mb-2">
+          Codificar
+        </button>
+        <button id="uncrypt" type="button" class="btn btn btn-info mx-2 mb-2">
+          Decifrar
+        </button>
         <button
-          id="crypt"
+          id="clear"
           type="button"
           class="btn btn-outline-primary mx-2 mb-2"
         >
-          Encryptar
-        </button>
-        <button
-          id="uncrypt"
-          type="button"
-          class="btn btn btn-outline-primary mx-2 mb-2"
-        >
-          Desencryptar
-        </button>
-        <button id="clear" type="button" class="btn btn-warning mx-2 mb-2">
           Limpar
         </button>
-        <button id="copy" type="button" class="btn btn-success mx-2 mb-2">
+        <button id="copy" type="button" class="btn btn-dark mx-2 mb-2">
           Copiar
         </button>
-        <button id="paste" type="button" class="btn btn-info mx-2 mb-2">
+        <button id="paste" type="button" class="btn btn-dark mx-2 mb-2">
           Colar
         </button>
       </section>

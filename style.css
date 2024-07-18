@@ -36,3 +36,16 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+#title {
+  background-color: #453d8d;
+  border-radius: 5px;
+  color: #fefefe;
+}
+
+@media (max-width: 768px) {
+  #texts {
+    display: flex;
+    gap: 10px;
+  }
+}
