@@ -48,4 +48,8 @@
     display: flex;
     gap: 10px;
   }
+
+  #title {
+    font-size: 7vw;
+  }
 }
